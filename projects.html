@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="package/swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar-left">
+                <div class="name-info">
+                    <h1>
+                        <a href="index.html" class="name">THIEN THE PHAM</a>
+                    </h1>
+                    <p class="description">Programmer | Game Designer</p>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <h2 class="link">
+                    <a href="index.html">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="media/Thien The Pham Resume.pdf">Resume</a>      
+                </h2>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="video-overlay">
+        <div class="video-container">
+            <div class="video-close" onclick="closeVideo()">&times;</div>
+            <div class="video-player">
+                <video controls id="purgatorio_trailer">
+                    <source src="media/Purgatorio Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <section id="projects">
+        <div class="project">
+            <div class="inline-flex origin1">
+                <div class="swiper-container swiper-left block1">
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="thumbnail" onclick="playVideo('purgatorio_trailer')">
+                                <img class="filtered" src="media/purgatorio (3).png" alt="Thumbnail Image">
+                                <i class="fa fa-play-circle play-icon" style="font-size:70px;"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/purgatorio (5).png" alt="PURGATORIO">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/purgatorio (6).png" alt="PURGATORIO">
+                        </div>         
+                        <div class="swiper-slide">
+                            <img src="media/purgatorio (1).png" alt="PURGATORIO">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/purgatorio (7).png" alt="PURGATORIO">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/purgatorio.png" alt="PURGATORIO">
+                        </div>          
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="project-text">
+                    <div class="project-name">
+                        <h2>PURGATORIO </h2>
+                        <p class="description">September 2022 - April 2023 | Unity2D</p>
+                    </div>
+                    <div class="project-description">
+                        <h2 class="box-title">Description</h2>
+                        <p>An isometric roguelike pixel-art shooter inspired by the Divine Comedy. Play as a corrupt
+                            priest
+                            trapped in purgatory.
+                            The priest must fight through endless hordes of demons and confront the seven deadly sins to
+                            redeem his soul.</p>
+                    </div>
+                    <div class="project-features">
+                        <h2 class="box-title">Features</h2>
+                        <ul>
+                            <li>
+                                Procedurally generated dungeon layouts
+                            </li>
+                            <li>
+                                Random loot system with 8 weapon types, 9 weapon modifiers, creating more than 1500
+                                possible weapon variants
+                            </li>
+                            <li>
+                                Seven boss battles
+                            </li>
+                            <li>
+                                Optional challenge events for extra loot
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project-text move1">
+
+                <div class="project-type">
+                    <h2 class="box-title">Project Type</h2>
+                    <p>University's Capstone project developed in a team over two semesters.</p>
+                </div>
+                <div class="project-contributions">
+                    <h2 class="box-title">My Contributions</h2>
+                    <ul>
+                        <li>
+                            Designed and implemented the random weapon/loot system
+                        </li>
+                        <li>
+                            Coded the weapons' shooting, reloading, swapping mechanics
+                        </li>
+                        <li>Programmed the inventory and pickup/dropoff system</li>
+                        <li>
+                            Developed the tutorial scene and created a simple dialogue system used both in the
+                            tutorial and boss fights
+                        </li>
+                        <li>
+                            Created artwork and animations for some enemies and one boss (Envy) featured in the game.
+                        </li>
+                        <li> Designed and implemented the challenge event system</li>
+                        <li>Implemented currency</li>
+                        <li> Designed and coded the Lust boss fight</li>
+                        <li>
+                            Bug fixing and polishing other gameplay features
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-insights">
+                    <h2 class="box-title">Project Insights</h2>
+                    <p>My main contribution in this project was the weapon system.
+                        I started out by making a list of weapon stats such as damage, ammo capacity, fire rate, and
+                        reload speed.
+                        I then used that to create a table featuring all weapon types and their values for each weapon
+                        stat.
+                        By estimating damage per second for each weapon type, I then tweak the values to ensure that
+                        each weapon can fill a different role while all remaining viable.
+                        Once the standard stats for each weapon are finalized, I created another table for modifiers
+                        that would alter those stats as well as special modifiers that can make bullets bouncy or change
+                        the firing mechanic.
+                        I then implemented the weapons using inheritence, with a parent 'weapon' class and mutliple
+                        child classes for different weapon features.
+                        This system allowed me to easily generate random weapons as loot.
+                        For the weapons themselves I applied mutliple techniques such as raycasting, vector
+                        manipulation, and circle casting
+                        to create different weapon features that can greatly alter gameplay.</p>
+                    <p>
+                        My other major contribution is the game events system which utilizes event handling to create
+                        the
+                        dialogue system, the in-game events, and progress checkpoints.
+                    </p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="https://vestroie.itch.io/dreamshaper">DOWNLOAD</a>
+            </div>
+        </div>
+        <hr>
+        <div class="project move2">
+            <div class="inline-flex origin2">
+                <div class="project-text">
+                    <div class="project-name">
+                        <h2>AI Pathfinder </h2>
+                        <p class="description">April 2022 | Unity3D</p>
+                    </div>
+                    <div class="project-description">
+                        <h2 class="box-title">Description</h2>
+                        <p>An AI simulation of reinforcement learning in pathfinding.
+                            Train 2 AI agents to pick up and delivery objects to different locations on a
+                            customizable grid.</p>
+                    </div>
+                    <div class="project-features">
+                        <h2 class="box-title">Features</h2>
+                        <ul>
+                            <li>
+                                Drawable map and customizable pickup/dropoff locations, capacity
+                            </li>
+                            <li>
+                                Choose between 2 learning algorithm (SARSA, Q-learning) and 3 policies (PRANDOM,
+                                PGREEDY, PEXPLOIT)
+                            </li>
+                            <li>
+                                Customizable values for movement speed, learning rate and discount rate
+                            </li>
+                            <li>
+                                Heatmap that shows most used paths
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-container swiper-right block2">
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="media/AIpathfinder (1).png" alt="AIpathfinder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/AIpathfinder (3).png" alt="AIpathfinder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/AIpathfinder (2).png" alt="AIpathfinder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/AIpathfinder (4).png" alt="AIpathfinder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/AIpathfinder (5).png" alt="AIpathfinder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/AIpathfinder.png" alt="AIpathfinder">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="project-text">
+
+                <div class="project-type">
+                    <h2 class="box-title">Project Type</h2>
+                    <p>Solo project as part of a university course.</p>
+                </div>
+                <div class="project-insights">
+                    <h2 class="box-title">Project Insights</h2>
+                    <p>Implementing the learning algorithms were surprisingly the easiest part.
+                        The most difficult task was building and visualizing the world.
+                        First I had to build a custom grid map that would allow the user to draw cells and place
+                        agents and zones.
+                        The grid itself has access to the locations of both agents and the pickup/dropoff zones,
+                        however this information is not included in the algorithms.
+                        The algorithms only have access to the agent's location, their distance, their state and the
+                        state of the zones.
+                        Then I used the event handling system to build a tick-based timer to move the agents
+                        step-by-step.
+                        By applying the algorithms the agents could learn the most optimal paths as they move.
+                        Finally, I created UI to customize values, change algorithms, and policies.
+                        I also added auto-pausing mechanics and a heatmap for ease of use.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="button">
+            <a href="https://vestroie.itch.io/the-unwilling-hero">DOWNLOAD</a>
+        </div>
+        <hr>
+        <div class="project">
+            <div class="inline-flex">
+                <div class="swiper-container swiper-left move3">
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="media/dreamshaper (3).png" alt="Dreamshaper">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/dreamshaper (2).png" alt="Dreamshaper">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/dreamshaper (4).png" alt="Dreamshaper">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/dreamshaper (1).png" alt="Dreamshaper">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="project-text origin3">
+                    <div class="project-name">
+                        <h2>DREAMSHAPER </h2>
+                        <p class="description">December 2020 | Unity3D</p>
+                    </div>
+
+                    <p>A 2.5D Puzzle Platformer game that takes place within a dream. The player is given the
+                        ability to change the direction of gravity, move and alter the size of objects.
+                        They must skillfully navigate a series of challenging levels to escape from the dream.
+                    </p>
+                    <p>RIT Game Dev Club's Pajama Jam submission. Developed by a team of two in 48 hours
+                    </p>
+                    <p>I were responsible for implementing the object moving mechanics as well as designing,
+                        creating,
+                        and
+                        testing most of the levels.</p>
+                    <p>I experimented a lot with Unity's physics system and applied it in designing puzzles</p>
+                    <div class="button block3">
+                        <a href="https://vestroie.itch.io/dreamshaper">DOWNLOAD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <hr>
+        <div class="project">
+            <div class="inline-flex">
+                <div class="project-text origin4">
+                    <div class="project-name">
+                        <h2>UWILLING HERO </h2>
+                        <p class="description">July 2020 | Unity2D</p>
+                    </div>
+                    <p>Guide an unwilling hero on his journey in this pixelated puzzle game. The hero only moves in
+                        a
+                        straigth path until he encounters an obstacle.
+                        Place down tiles to alter the hero's path and help him navigate various puzzles.</p>
+                    <p>Developed by a team of two in 48 hours for GMTK Game Jam.</p>
+                    <p>I created several placeable tiles and designed all of the puzzles.</p>
+                    <p>Through this project I learned a lot about the Unity tilemap system and how to use it to
+                        create fun game mechanics/puzzles.</p>
+                    <div class="button block4">
+                        <a href="https://vestroie.itch.io/the-unwilling-hero">DOWNLOAD</a>
+                    </div>
+                </div>
+                <div class="swiper-container swiper-right move4">
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="media/unwillinghero (3).png" alt="Dreamshaper">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/unwillinghero (2).png" alt="Dreamshaper">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/unwillinghero (1).png" alt="Dreamshaper">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <script src="package/swiper-bundle.js"></script>
+        <script src="swiper.js"></script>
+        <script src="moveblock.js"></script>
+        <script src="videoplayer.js"></script>
+    </section>
+
+    <footer>
+        <div id="footer-wrapper">
+            <div id="contact">
+                <h2>
+                    Contact Me
+                </h2>
+
+
+                <p>
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size:25px; color: white;"></i>
+                    Email:
+                    <a href="mailto:thienthepham@gmail.com">thienthepham@gmail.com</a>
+                </p>
+
+
+                <p>
+                    <i class="fa fa-phone" aria-hidden="true" style="font-size:25px; color: white;"></i>
+                    Phone number:
+                    <a href="tel:+1585-957-1063">585-957-1063</a>
+                </p>
+
+
+            </div>
+
+            <div id="website-links">
+                <h2>
+                    Follow me
+                </h2>
+                <a href="https://github.com/thien-pham28" target="_blank">
+                    <i class="fa fa-github-square" aria-hidden="true" style="font-size:50px;"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/thien-pham-1084a6263/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:50px;"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
