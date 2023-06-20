@@ -1,0 +1,383 @@
+/*Nav bar */
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.name-info {
+    margin-left: 50px;
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar-right {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.name {
+    color: rgb(0, 102, 255);
+    font-family: 'Bahnschrift Light';
+}
+
+.project-name .description {
+    color: rgb(133, 133, 133);
+    text-align: right;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+.name-info .description {
+    color: rgb(133, 133, 133);
+    text-align: right;
+    font-size: 20px;
+    margin-top: 33px;
+    margin-left: 10px;
+}
+
+nav a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#theme-toggle {
+    background-color: #000000;
+    border: none;
+}
+
+.fa-adjust {
+    color: white;
+}
+
+.fa-adjust:hover {
+    color: rgb(0, 102, 255);
+    transition: 0.5s;
+}
+
+/* body */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+body.light-mode {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    display: block;
+    flex: 1 0 auto;
+    font-size: 55px;
+    margin: 0;
+
+}
+
+hr {
+    border: 1px solid white;
+}
+
+section {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 5px solid rgb(0, 102, 255);
+    animation: appear 1s ease-in-out;
+}
+
+h3 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+h3 span {
+    background: black;
+    padding: 0 10px;
+}
+
+.about-content {
+    max-width: 750px;
+    margin-right: 100px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: circle;
+    font-size: 20px;
+}
+
+li {
+    margin: 10px;
+}
+
+.fade-in-left {
+    animation-name: fade-in-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-bottom-1 {
+    animation-name: fade-in-bottom-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-bottom-1 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-bottom-2 {
+    animation-name: fade-in-bottom-2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-bottom-2 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-bottom-3 {
+    animation-name: fade-in-bottom-3;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-bottom-3 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-bottom-4 {
+    animation-name: fade-in-bottom-4;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-bottom-4 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-bottom-5 {
+    animation-name: fade-in-bottom-5;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-bottom-5 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    color: rgb(0, 102, 255);
+}
+
+.button {
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 102, 255);
+    font-size: 16px;
+    width: max-content;
+    margin: auto;
+}
+
+.button a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: rgb(118, 173, 255);
+}
+.button a:hover {
+    color: #000000;
+}
+
+
+.link {
+    font-size: 24px;
+    margin-bottom: 20px;
+    word-spacing: 20px;
+}
+
+h2 a:hover {
+    color: rgb(0, 102, 255);
+    transition: 0.5s;
+}
+
+/* footer */
+
+footer {
+    grid-area: footer;
+    background-color: rgb(30, 38, 56);
+    padding: 20px;
+    border-bottom: 60px solid rgb(21, 28, 44);
+}
+
+#footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+footer h2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+a {
+    transition: 0.5s;
+}
+
+#contact a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: rgb(0, 102, 255);
+}
+
+#website-links a {
+    padding-right: 20px;
+}
+
+.fa-github-square {
+    color: white;
+}
+
+.fa-github-square:hover {
+    color: rgb(0, 102, 255);
+    transition: 0.5s;
+}
+
+.fa-linkedin-square {
+    color: white;
+}
+
+.fa-linkedin-square:hover {
+    color: rgb(0, 102, 255);
+    transition: 0.5s;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 1200px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-right {
+        margin-right: 0px;
+    }
+
+    .name-info {
+        margin-left: 0px;
+    }
+
+    #about
+    {
+        flex-direction: column;
+    }
+}
