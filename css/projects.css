@@ -20,11 +20,6 @@
   text-align: justify;
 }
 
-.project-heading h2 {
-  font-size: 24px;
-  margin: 0;
-}
-
 .project-description {
   border-top: 2px solid rgb(26, 106, 225);
   padding: 10px 50px 25px 50px;
@@ -195,5 +190,88 @@
 
   .move3 {
     margin-bottom: 55px;
+  }
+
+  .project-text {
+    text-align: left;
+  }
+
+  .project-text p {
+    margin: 10px;
+  }
+
+  .project-name {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .project-name .description {
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .project-description {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .project-description .box-title {
+    top: -32px;
+    left: 50%;
+  }
+
+  .project-features {
+    margin-left: 10px;
+  }
+
+  .project-features .box-title {
+    top: -30px;
+    left: 50%;
+  }
+
+  .project-type {
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .project-type .box-title {
+    top: -30px;
+    left: 50%;
+  }
+
+  .project-contributions {
+    margin-left: 10px;
+  }
+
+  .project-contributions .box-title {
+    top: -28px;
+    left: 50%;
+    font-size: 19px;
+  }
+
+  .project-insights {
+    margin-left: 10px;
+  }
+
+  .project-insights .box-title {
+    top: -30px;
+    left: 50%;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .swiper-container {
+      width: 300px;
+      height: 300px;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
   }
 }
